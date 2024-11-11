@@ -8,3 +8,14 @@ brain-games: #Ejecutar el juego sin necesidad de una instalacion global
 
 publish: #Ejecutar comando publish
 	npm publish --dry-run
+
+lint: npx eslint .
+
+.PHONY: brain-even
+
+brain-even:  node_modules
+	node bin/brain-even.js
+
+brain-calc:  node_modules
+	node bin/brain-calc.js
+
