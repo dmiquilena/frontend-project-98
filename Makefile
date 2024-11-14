@@ -19,3 +19,5 @@ brain-even:  node_modules
 brain-calc:  node_modules
 	node bin/brain-calc.js
 
+brain-gcd: node_modules
+	node bin/brain-gcd.js

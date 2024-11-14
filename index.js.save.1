@@ -1,0 +1,126 @@
+import readlineSync from 'readline-sync';
+
+#!/usr/bin/env node
+
+const findMCD = (a, b) => {
+  while (b !== 0) {
+    let temp = b;
+    b = a % b;
+    a = temp;
+  }
+  return a;
+}
+
+
+const gameLogic = () => {
+
+        const num1 = Math.floor(Math.random() * 100) + 1;
+        const num2 = Math.floor(Math.random() * 100) + 1;
+        const correctAnswer = findMCD(num1, num2);
+
+        const question = `${num1} ${num2};
+        return { question, correctAnswer };
+};
+
+export default gameLogic;
+
+#!/usr/bin/env node
+
+const findMCD = (a, b) => {
+  while (b !== 0) {
+    let temp = b;
+    b = a % b;
+    a = temp;
+  }
+  return a;
+}
+
+
+const gameLogic = () => {
+
+        const num1 = Math.floor(Math.random() * 100) + 1;
+        const num2 = Math.floor(Math.random() * 100) + 1;
+        const correctAnswer = findMCD(num1, num2);
+
+        const question = `${num1} ${num2};
+        return { question, correctAnswer };
+};
+
+export default gameLogic;
+
+#!/usr/bin/env node
+
+const findMCD = (a, b) => {
+  while (b !== 0) {
+    let temp = b;
+    b = a % b;
+    a = temp;
+  }
+  return a;
+}
+
+
+const gameLogic = () => {
+
+        const num1 = Math.floor(Math.random() * 100) + 1;
+        const num2 = Math.floor(Math.random() * 100) + 1;
+        const correctAnswer = findMCD(num1, num2);
+
+        const question = `${num1} ${num2};
+        return { question, correctAnswer };
+};
+
+export default gameLogic;
+
+#!/usr/bin/env node
+
+const findMCD = (a, b) => {
+  while (b !== 0) {
+    let temp = b;
+    b = a % b;
+    a = temp;
+  }
+  return a;
+}
+
+
+const gameLogic = () => {
+
+        const num1 = Math.floor(Math.random() * 100) + 1;
+        const num2 = Math.floor(Math.random() * 100) + 1;
+        const correctAnswer = findMCD(num1, num2);
+
+        const question = `${num1} ${num2};
+        return { question, correctAnswer };
+};
+
+export default gameLogic;
+
+const playGame = (gameLogic, gameDescription) => {
+	console.log('¡Bienvenido a Brain Games!');
+	const userName = readlineSync.question('¿Cuál es tu nombre? ');
+	console.log(`¡Hola, ${userName}!`);
+	console.log(gameDescription);
+
+	let round = 0;
+	const maxRounds = 3;
+
+	while (round < maxRounds) {
+		const { question, correctAnswer} = gameLogic();
+		console.log(`Pregunta: ${question}`);
+		const userAnswer = readlineSync.question('Tu respuesta: ');
+
+		if (userAnswer !== String(correctAnswer)) {
+		console.log(`'${userAnswer}' es una respuesta incorrecta ;(. La respuesta correcta era '${correctAnswer}'.`);
+      		console.log(`¡Intentémoslo de nuevo, ${userName}!`);
+      		return;
+		}
+
+		console.log('¡Correcto!');
+		round += 1;
+	}
+
+	console.log (`¡Felicidades, ${userName}!`);
+};
+
+export default playGame;
