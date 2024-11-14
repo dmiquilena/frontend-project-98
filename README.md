@@ -12,3 +12,6 @@ https://asciinema.org/a/UdJs6mXUWpXrcNem1cyWGsATl
 
 # TESTING brain-progression.js
 https://asciinema.org/a/Q1sYKrFbNTAqOmxrwTUhTLn0D
+
+# TESTING brian-prime.js
+https://asciinema.org/a/WeZrls5LMHjKW28d1JG2zcNWf
