@@ -9,3 +9,6 @@ https://asciinema.org/a/UK5ZNyrzh1JX1na41YpT41d8d
 
 # TESTING brain-gcd.js
 https://asciinema.org/a/UdJs6mXUWpXrcNem1cyWGsATl
+
+# TESTING brain-progression.js
+https://asciinema.org/a/Q1sYKrFbNTAqOmxrwTUhTLn0D
