@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 import readlineSync from 'readline-sync';
-import greetUser from '/home/dmiquilena95/frontend-project-98/cli.js';
+import greetUser from '../cli.js';
 
 
 const isEven = (num) => num % 2 === 0;
