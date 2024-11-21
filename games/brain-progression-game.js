@@ -1,9 +1,6 @@
 #!/usr/bin/env node
 
-const getRandomInt = (min, max) => {
-  return Math.floor(Math.random() * (max - min + 1)) + min;
-}
-
+const getRandomInt = (min, max) => {return Math.floor(Math.random() * (max - min + 1)) + min;};
 
 const gameLogic = () => {
 
@@ -11,9 +8,8 @@ const gameLogic = () => {
   const start = getRandomInt(1, 10);
   const step = getRandomInt(2, 6);
 
-
   const progression = [];
-  for (let i = 0; i < length; i++) {
+  for (let i = 0; i < length; i = i + 1) {
     progression.push(start + i * step);
   }
 
@@ -25,8 +21,8 @@ const gameLogic = () => {
 
   return {
     question: progression.join(' '),
-    correctAnswer: missingNumber
+    correctAnswer: missingNumber,
   };
-}
+};
 
 export default gameLogic;

@@ -2,7 +2,6 @@
 
 import getRandomInt from '../getRandomInt.js';
 
-
 const gameLogic = () => {
   const num1 = getRandomInt(1, 50);
   const num2 = getRandomInt(1, 50);

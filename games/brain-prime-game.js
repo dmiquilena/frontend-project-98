@@ -2,13 +2,13 @@
 
 const isPrime = (num) => {
   if (num <= 1) return false;
-  for (let i = 2; i <= Math.sqrt(num); i++) {
+  for (let i = 2; i <= Math.sqrt(num); i = i + 1) {
     if (num % i === 0) {
       return false;
     }
   }
   return true;
-}
+};
 
 const gameLogic = () => {
   const num = Math.floor(Math.random() * 100) + 1;
@@ -16,8 +16,8 @@ const gameLogic = () => {
 
   return {
     question: num.toString(),
-    correctAnswer
+    correctAnswer,
   };
-}
+};
 
 export default gameLogic;
