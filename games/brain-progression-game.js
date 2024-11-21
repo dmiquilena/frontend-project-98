@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 
-const getRandomInt = (min, max) => { return Math.floor(Math.random() * (max - min + 1)) + min; };
+const getRandomInt = (min, max) =>
+  Math.floor(Math.random() * (max - min + 1)) + min;
 
 const gameLogic = () => {
   const length = Math.floor(Math.random() * 6) + 5;
@@ -8,7 +9,7 @@ const gameLogic = () => {
   const step = getRandomInt(2, 6);
 
   const progression = [];
-  for (let i = 0; i < length; i = i =+ 1) {
+  for (let i = 0; i < length; i = i += 1) {
     progression.push(start + i * step);
   }
 
