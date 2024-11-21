@@ -11,7 +11,7 @@ const playGame = () => {
 
   let correctAnswers = 0;
 
-   while(correctAnswers < 3) {
+  while (correctAnswers < 3) {
     const randomNum = Math.floor(Math.random() * 100);
     console.log(`Pregunta: ${randomNum}`);
     const userAnswer = readlineSync.question('Tu respuesta: ');

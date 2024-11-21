@@ -10,19 +10,19 @@ const playGame = (gameLogic, gameDescription) => {
   const maxRounds = 3;
 
   while (round < maxRounds) {
-    const { question, correctAnswer} = gameLogic();
+    const { question, correctAnswer } = gameLogic();
     console.log(`Pregunta: ${question}`);
     const userAnswer = readlineSync.question('Tu respuesta: ');
 
     if (userAnswer !== String(correctAnswer)) {
-    console.log(`'${userAnswer}' es una respuesta incorrecta ;(. La respuesta correcta era '${correctAnswer}'.`);
-    console.log(`¡Intentémoslo de nuevo, ${userName}!`);
-    return;
-    };
+      console.log(`'${userAnswer}' es una respuesta incorrecta ;(. La respuesta correcta era '${correctAnswer}'.`);
+      console.log(`¡Intentémoslo de nuevo, ${userName}!`);
+      return;
+    }
 
     console.log('¡Correcto!');
     round += 1;
-    };
+  }
 
   console.log(`¡Felicidades, ${userName}!`);
 };
